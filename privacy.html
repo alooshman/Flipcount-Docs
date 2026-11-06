@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Flipcount</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --primary: #16A34A;
+            --bg: #F2F2F7;
+            --card-bg: #FFFFFF;
+            --text: #1C1C1E;
+            --text-body: #3A3A3C;
+            --text-secondary: #636366;
+            --border: #E5E5EA;
+            --shadow: rgba(0, 0, 0, 0.04);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #22C55E;
+                --bg: #000000;
+                --card-bg: #1C1C1E;
+                --text: #FFFFFF;
+                --text-body: #E5E5EA;
+                --text-secondary: #98989D;
+                --border: #2C2C2E;
+                --shadow: rgba(0, 0, 0, 0.4);
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin: 0;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+
+        .card > h2:first-child {
+            margin-top: 0;
+        }
+
+        p, li {
+            font-size: 15px;
+            color: var(--text-body);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--primary);
+            outline-offset: 3px;
+            border-radius: 2px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 32px;
+        }
+
+        footer nav {
+            margin-top: 8px;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer nav a[aria-current="page"] {
+            font-weight: 600;
+            color: var(--text);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Privacy Policy</h1>
+        <p>Last Updated: November 5, 2026</p>
+    </header>
+
+    <main class="card">
+        <p>Flipcount ("the App"), developed by Ali Nazzal ("we", "our", or "us"), respects your privacy. This Privacy Policy explains how data is handled when you use the Flipcount mobile application.</p>
+
+        <h2>1. Data Storage &amp; Syncing</h2>
+        <p>Flipcount is architected with privacy-first principles:</p>
+        <ul>
+            <li><strong>Local &amp; Personal Cloud Storage:</strong> Inventory items, sourcing receipt records, sale records, profit calculations, and receipt attachments are stored locally on your device and synchronized across your authorized devices using your personal operating system cloud backup account. Your data resides solely in your private personal storage container. We do not operate external database servers storing your inventory or sales history, nor do we have access to your stored records.</li>
+            <li><strong>AI Receipt Processing &amp; OCR:</strong> When you scan a receipt or import a document/PDF, image files are transmitted securely via encrypted HTTPS to vetted cloud AI infrastructure solely for real-time optical character recognition (OCR) and structured data extraction. Data is processed ephemerally, is never reviewed by human annotators, is never used to train artificial intelligence models, is never used to track users across services, and is not permanently stored. The AI provider may retain prompts and responses for up to 55 days solely for abuse monitoring.</li>
+            <li><strong>No Bank Linking:</strong> Flipcount never connects to your bank accounts, payment cards, or marketplace accounts. You enter sale prices and fees yourself, or they are calculated from the figures you provide. We never see your financial accounts.</li>
+        </ul>
+
+        <h2>2. In-App Purchases &amp; Billing</h2>
+        <p>All subscription and purchase transactions are processed securely through Apple's App Store in-app purchase system and verified via industry-standard subscription management infrastructure. We do not collect, view, or store your payment card numbers, banking details, or billing addresses.</p>
+
+        <h2>3. Third-Party Service Providers</h2>
+        <p>We only work with trusted third-party infrastructure and service sub-processors strictly necessary to deliver core application functionality:</p>
+        <ul>
+            <li><strong>Personal Cloud Backup Services:</strong> To enable secure cross-device synchronization tied to your personal device account.</li>
+            <li><strong>Cloud AI Sub-Processors:</strong> To provide ephemeral, automated text extraction and optical character recognition for receipt images.</li>
+            <li><strong>App Store &amp; Purchase Verification Services:</strong> To process digital transactions, validate receipts, and manage active subscription entitlements.</li>
+        </ul>
+
+        <h2>4. Analytics &amp; Tracking</h2>
+        <p>Flipcount does not track you across third-party applications or websites, nor do we sell, rent, or trade your personal information to third-party advertisers or data brokers.</p>
+
+        <h2>5. Data Retention &amp; Deletion</h2>
+        <p>Your inventory and sales data is retained exclusively on your local device and within your private personal cloud storage container. Deleting the Flipcount application from a device removes the local database copy on that device. Synced records remain in your private cloud storage until you delete them directly within the app or manage them via your device's system cloud storage settings.</p>
+        <p>Items you delete are moved to Recently Deleted, where they are excluded from your inventory, dashboard, sales, and tax export. Items in Recently Deleted are permanently deleted after 30 days. Restoring an item before then returns it, including any linked sale, exactly as it was.</p>
+
+        <h2>6. User Responsibility for Data Backups</h2>
+        <p>Flipcount operates on a local-first and personal cloud architecture. We do not maintain server-side backups of your inventory, sales, or receipts. You are solely responsible for maintaining adequate backups of your device and cloud storage. We are not liable for any lost, corrupted, or unrecoverable data resulting from device loss, app deletion, hardware failure, or cloud sync errors.</p>
+
+        <h2>7. Accuracy of Processed Data</h2>
+        <p>Automated optical character recognition (OCR) and AI features are provided for convenience only. You acknowledge and agree that automatically extracted receipt data (such as amounts, dates, line items, and merchant names) may contain errors or inaccuracies. You are solely responsible for verifying the accuracy of all parsed inventory data before relying on it for financial, accounting, tax, or legal purposes. Profit calculations and Schedule C exports are summaries of the figures you provide and verify; they do not constitute tax advice.</p>
+
+        <h2>8. Children's Privacy</h2>
+        <p>Flipcount does not knowingly collect or solicit personal data from anyone under the age of 13.</p>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date.</p>
+
+        <h2>10. Accessibility Statement</h2>
+        <p>We are committed to digital accessibility and ensuring our software and web content conform to WCAG 2.1 Level AA accessibility standards. If you encounter any accessibility barriers while using Flipcount or our web services, please email us at <a href="mailto:snicks.legate-7y@icloud.com">snicks.legate-7y@icloud.com</a> and we will actively work to resolve the issue.</p>
+
+        <h2>11. Contact Us</h2>
+        <p>If you have questions regarding this Privacy Policy, you may contact us at <a href="mailto:snicks.legate-7y@icloud.com">snicks.legate-7y@icloud.com</a>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ali Nazzal. All rights reserved.</p>
+        <nav>
+            <a href="privacy.html" aria-current="page">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </footer>
+</div>
+
+</body>
+</html>
