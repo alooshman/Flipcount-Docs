@@ -8,6 +8,9 @@
         :root {
             color-scheme: light dark;
             --primary: #16A34A;
+            --primary-text: #166534;
+            --btn-bg: #166534;
+            --btn-text: #FFFFFF;
             --bg: #F2F2F7;
             --card-bg: #FFFFFF;
             --text: #1C1C1E;
@@ -20,6 +23,9 @@
         @media (prefers-color-scheme: dark) {
             :root {
                 --primary: #22C55E;
+                --primary-text: #22C55E;
+                --btn-bg: #22C55E;
+                --btn-text: #052E16;
                 --bg: #000000;
                 --card-bg: #1C1C1E;
                 --text: #FFFFFF;
@@ -77,8 +83,8 @@
 
         .btn {
             display: inline-block;
-            background-color: var(--primary);
-            color: #FFFFFF;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
             text-decoration: none;
             font-weight: 600;
             padding: 14px 28px;
@@ -92,7 +98,7 @@
         }
 
         .btn:focus-visible, a:focus-visible {
-            outline: 3px solid var(--primary);
+            outline: 3px solid var(--primary-text);
             outline-offset: 3px;
         }
 
@@ -112,6 +118,7 @@
 
         .faq-question {
             font-weight: 600;
+            margin-top: 0;
             font-size: 15px;
             margin-bottom: 4px;
             color: var(--text);
@@ -130,7 +137,7 @@
         }
 
         a {
-            color: var(--primary);
+            color: var(--primary-text);
             text-decoration: underline;
         }
 
@@ -146,8 +153,8 @@
         }
 
         footer a {
-            color: var(--primary);
-            text-decoration: none;
+            color: var(--primary-text);
+            text-decoration: underline;
             margin: 0 8px;
         }
 
@@ -180,8 +187,8 @@
         <!-- Accessibility Statement Card -->
         <section class="card" aria-labelledby="accessibility-heading">
             <h2 id="accessibility-heading">Accessibility Commitment</h2>
-            <p>Flipcount is committed to ensuring digital accessibility for people of all abilities. We continuously improve the user experience for everyone and apply relevant WCAG 2.1 Level AA accessibility standards across our iOS application and web resources.</p>
-            <p style="margin-bottom: 0;">If you experience any difficulty accessing content or using features, please email us directly at <a href="mailto:snicks.legate-7y@icloud.com?subject=Flipcount%20Accessibility%20Assistance">snicks.legate-7y@icloud.com</a>. We take all accessibility feedback seriously and actively remediate reported barriers.</p>
+            <p>Flipcount is committed to ensuring digital accessibility for people of all abilities. We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA across our iOS application and web resources, and we test against those criteria with each release. Some content may not yet fully conform &mdash; including the third-party subscription paywall presented inside the app &mdash; and we are actively working to remediate known barriers.</p>
+            <p style="margin-bottom: 0;">If you experience any difficulty accessing content or using features, please email us directly at <a href="mailto:snicks.legate-7y@icloud.com?subject=Flipcount%20Accessibility%20Assistance">snicks.legate-7y@icloud.com</a>. We take all accessibility feedback seriously, aim to respond within 5 business days, and will work with you to provide any content or feature in an accessible alternative format while a reported barrier is being fixed.</p>
         </section>
 
         <!-- Frequently Asked Questions -->
@@ -189,32 +196,32 @@
             <h2 id="faq-heading">Frequently Asked Questions</h2>
 
             <article class="faq-item">
-                <p class="faq-question">How do I restore my Pro purchase?</p>
+                <h3 class="faq-question">How do I restore my Pro purchase?</h3>
                 <p class="faq-answer">Open Flipcount, navigate to Settings or the Upgrade screen, and tap "Restore Purchases." Make sure you are signed into the same Apple ID used for the original purchase.</p>
             </article>
 
             <article class="faq-item">
-                <p class="faq-question">Where is my inventory and sales data stored?</p>
+                <h3 class="faq-question">Where is my inventory and sales data stored?</h3>
                 <p class="faq-answer">On your device, and synced across your devices via your personal iCloud account. We do not maintain external database servers to store your history. When scanning a receipt, image files are transmitted securely over an encrypted connection solely for automated real-time optical character recognition (OCR) and structured data extraction. Data is processed ephemerally, is never used to train artificial intelligence models, is never used to track users across services, and is not permanently stored.</p>
             </article>
 
             <article class="faq-item">
-                <p class="faq-question">How do I export my data for tax filing?</p>
+                <h3 class="faq-question">How do I export my data for tax filing?</h3>
                 <p class="faq-answer">Flipcount Pro includes a Schedule C CSV export: open Settings, choose Tax Export, pick the tax year, and share or save the CSV file. It works with Excel, Numbers, QuickBooks, and your accountant. The export is a summary of the figures you entered and verified; it is not tax advice, so review it before filing.</p>
             </article>
 
             <article class="faq-item">
-                <p class="faq-question">Are there limits on how many receipts I can scan?</p>
+                <h3 class="faq-question">Are there limits on how many receipts I can scan?</h3>
                 <p class="faq-answer">The free tier includes 10 lifetime receipt scans, counted per receipt saved. Adding items manually is free and unlimited. Pro (monthly, yearly, or lifetime) includes unlimited scans, subject to a fair-use limit of 30 scans per hour to prevent abuse. These limits may be adjusted from time to time.</p>
             </article>
 
             <article class="faq-item">
-                <p class="faq-question">I deleted an item by mistake. Can I get it back?</p>
+                <h3 class="faq-question">I deleted an item by mistake. Can I get it back?</h3>
                 <p class="faq-answer">Yes. Deleted items go to Recently Deleted for 30 days. Open Recently Deleted from the Inventory tab, find the item, and tap Restore. Restoring returns the item exactly as it was, including any linked sale. After 30 days, items in Recently Deleted are permanently deleted.</p>
             </article>
 
             <article class="faq-item">
-                <p class="faq-question">Which marketplaces does Flipcount support?</p>
+                <h3 class="faq-question">Which marketplaces does Flipcount support?</h3>
                 <p class="faq-answer">Flipcount tracks sales on Poshmark, Depop, Mercari, and eBay, with built-in fee calculations for each platform so your net profit is shown after fees, shipping, and cost.</p>
             </article>
         </section>
